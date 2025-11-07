@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestionODS.DAL.DataContext.Repositories
+namespace GestionODS.DAL.Repositories
 {
     public interface IGenericRepository<TEntityModel> where TEntityModel : class
     {
@@ -12,6 +12,6 @@ namespace GestionODS.DAL.DataContext.Repositories
         Task<bool> Update(TEntityModel model);
         Task<bool> Delete(string id);
         Task<TEntityModel> GetID(string id);
-        Task<IQueryable<TEntityModel>> GetaLL();
+        Task<IQueryable<TEntityModel>> GetAll();
     }
 }
