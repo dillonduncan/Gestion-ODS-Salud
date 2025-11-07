@@ -7,4 +7,9 @@
     <RootNamespace>Gestion_ODS_Salud.AppWeb</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GestionODS.BLL\GestionODS.BLL.csproj" />
+    <ProjectReference Include="..\GestionODS.Models\GestionODS.Models.csproj" />
+  </ItemGroup>
+
 </Project>

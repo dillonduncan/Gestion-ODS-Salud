@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GestionODS.DAL\GestionODS.DAL.csproj" />
+    <ProjectReference Include="..\GestionODS.Models\GestionODS.Models.csproj" />
+  </ItemGroup>
+
 </Project>

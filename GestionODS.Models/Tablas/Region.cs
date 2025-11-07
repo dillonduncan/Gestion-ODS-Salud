@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace GestionODS.DAL.DataContext;
+namespace GestionODS.Models;
 
 public partial class Region
 {
