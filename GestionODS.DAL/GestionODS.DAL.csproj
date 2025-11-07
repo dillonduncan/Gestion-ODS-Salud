@@ -15,10 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DataContext\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\GestionODS.Models\GestionODS.Models.csproj" />
   </ItemGroup>
 

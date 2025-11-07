@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using GestionODS.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace GestionODS.DAL.DataContext;
@@ -27,7 +28,7 @@ public partial class GestionOdsSaludContext : DbContext
 
     public virtual DbSet<ObjetivoOd> ObjetivoOds { get; set; }
 
-    public virtual DbSet<Pai> Pais { get; set; }
+    public virtual DbSet<Pais> Pais { get; set; }
 
     public virtual DbSet<Region> Regions { get; set; }
 
@@ -196,7 +197,7 @@ public partial class GestionOdsSaludContext : DbContext
                 .HasColumnName("nombre_objetivo");
         });
 
-        modelBuilder.Entity<Pai>(entity =>
+        modelBuilder.Entity<Pais>(entity =>
         {
             entity.HasKey(e => e.IdPais).HasName("PK__pais__0941A3A76AB105FF");
 

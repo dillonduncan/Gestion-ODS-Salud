@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using GestionODS.DAL.DataContext;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<GestionOdsSaludContext>(opc =>
+{
+    opc.UseSqlServer(builder.Configuration.GetConnectionString("cadenaDB"));
+});
 
 var app = builder.Build();
 

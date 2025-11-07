@@ -13,5 +13,5 @@ public partial class Region
 
     public virtual ICollection<DatoIndicador> DatoIndicadors { get; set; } = new List<DatoIndicador>();
 
-    public virtual Pai IdPaisNavigation { get; set; } = null!;
+    public virtual Pais IdPaisNavigation { get; set; } = null!;
 }

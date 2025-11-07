@@ -27,7 +27,7 @@ public partial class DatoIndicador
 
     public virtual IndicadorSalud IdIndicadorNavigation { get; set; } = null!;
 
-    public virtual Pai IdPaisNavigation { get; set; } = null!;
+    public virtual Pais IdPaisNavigation { get; set; } = null!;
 
     public virtual Region IdRegionNavigation { get; set; } = null!;
 

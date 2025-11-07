@@ -9,5 +9,5 @@ public partial class Continente
 
     public string NombreContinente { get; set; } = null!;
 
-    public virtual ICollection<Pai> Pais { get; set; } = new List<Pai>();
+    public virtual ICollection<Pais> Pais { get; set; } = new List<Pais>();
 }
